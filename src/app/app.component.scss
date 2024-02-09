@@ -2,8 +2,13 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* Combine similar styles */
+body, h1, label {
+  @apply text-white;
+}
+
 body {
-  @apply p-20 bg-gray-900 text-white;
+  @apply p-20 bg-gray-900;
 }
 
 h1 {
@@ -11,7 +16,7 @@ h1 {
 }
 
 label {
-  @apply text-lg text-white;
+  @apply text-lg;
 }
 
 input, select {
